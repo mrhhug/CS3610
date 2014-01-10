@@ -1,0 +1,1 @@
+wget -r -np --level=inf -N http://science.kennesaw.edu/~hhaddad/Spring2014/CS3610/
