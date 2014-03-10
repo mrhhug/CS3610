@@ -1,0 +1,81 @@
+﻿1)in chapter 6 we discussed seven steps for the OOA process. Lists and briefly explain five of these steps.
+From wikipedia, was not in slides
+Find the objects
+organize the objects
+Describe how the objects interact
+Define the behavior of the objects
+Define the internals of the objects
+
+2) in chapter 6 we discussed CRC modeling. One step of the CRC modeling is to identify collaborations among potential analysis classes. Name and briefly explain three class relationships that may exist among analysis classes
+part-of: This is a subclass relationship (part of an aggregate)
+has-knowledge-of: This is true when a class requires information from another class that is not a sub/parent class.
+depends-upon: This is true when dependency exists and not achieved via part-of or has-knowledge-of relationship.
+
+3) In chapter 6 we discussed OOA elements. The second element is the Object Relationship modeling
+	a) what is the object relationship modeling?
+Object relationship modeling focus on the various relationships between objects of the system (in addition to class relationships).
+
+	b) How to identify such relationships
+Grammatical parsing of scope statement (use-case descriptions) identifies such relationships (verbs), which in turn are recorded on the index cards (collaborators side).
+
+4) in section 7.3 we discussed five steps that the analyst must perform to create the Object behavior model. List and briefly explain these five steps
+Evaluate all use-cases to understand the sequence of interactions within the system.
+Identify events that drive the interactions and understand how these events affect or relate to specific objects.
+Create an event sequence for each use-case.
+Build a state diagram for the entire system.
+Review the behavioral model to verify accuracy and consistency.
+
+5) In chapter 8 we discussed a number of design concepts to help us produce high quality design. Other than design re factoring, list the names and briefly explain five design concepts we have discussed in class.
+Abstraction: data, procedure, control
+Refinement: elaboration of detail for all abstractions
+Modularity: compartmentalization of data and function
+Software Architecture: overall structure of software components
+Data Structures: logical relationships among data elements
+Information Hiding: controlled interfaces/access
+Functional Independence: high cohesion and low coupling
+Refactoring: reorganization technique that simplifies the design
+
+6) in chapter 8 we discussed the concept of Design re factoring. Explain the concept and give four benefits for applying design re factoring (not code re factoring)
+"Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code [design] yet improves its internal structure.”
+Redundancy
+Unused design elements
+Inefficient or unnecessary algorithms
+Poorly constructed or inappropriate data structures
+Any other design failures that can be corrected to yield a better design.
+
+7) in chapter 8 we discussed quality factors that must be address during the design phase. Explain what each of the following factors focuses on
+	software reliability
+reliability focuses on creating usable and stable software that can survive or live for a determined period of time without errors, shutdowns or bugs. The longer the time the better
+complete: does it handle all combinations of events and states?
+consistent: is the system behavior as expected and is it repeatable?
+robust: a failure in one component should not “hung” the entire system (ensure graceful termination in case of a failure)
+
+	Software usability
+usability focuses on the ability of the users to seftly and effectivly use the software. How accesable is it? How easy to use? Does it have any unnesesary problems?
+Interfaces are easy to use and navigate
+interfaces provide the user with control
+interfaces reduce “user memory load”
+interfaces are consistent
+
+8) in chapter 8 we discussed three categories of classes (called design classes) that are part of the software design. List the names of three categories (class types) and explain the purpose of each class type
+Entity classes are analysis classes are refined during design process.
+Boundary classes are developed during design to create the interface that the user sees and interacts with as the software is used. 
+Controller classes are designed to manage
+
+9) in chapter 9 we discussed a number of architectural styles. One of them was the data-centered style. List three advantages and three disadvantages for the architectural style.
+Think of olde timey travel agent
+advantage
+secure
+redundant
+data reliability – single point of failure for entire system
+disadvantage
+costly
+proprietary
+access unreliable - single failure point
+
+10) in chapter 9 on architectural design we discussed common patterns (called architectural patterns) these patterns represent repeated aspects of software architectures List and explain two examples of commons architectural patterns discussed in class.
+	An architectural pattern represents a repeated aspect of the style.
+	The architectural style may include a number of patterns. 
+Concurrency: Applications must handle multiple tasks in a manner that simulates parallelism 
+Persistence: Data persists if it survives past the execution of the process that created it.
+Distribution: Communicates among systems (or components of a system) in a distributed environment
