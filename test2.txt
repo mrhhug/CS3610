@@ -51,7 +51,7 @@ consistent: is the system behavior as expected and is it repeatable?
 robust: a failure in one component should not “hung” the entire system (ensure graceful termination in case of a failure)
 
 	Software usability
-usability focuses on the ability of the users to seftly and effectivly use the software. How accesable is it? How easy to use? Does it have any unnesesary problems?
+usability focuses on the ability of the users to saftly and effectivly use the software. How accesable is it? How easy to use? Does it have any unnesesary problems?
 Interfaces are easy to use and navigate
 interfaces provide the user with control
 interfaces reduce “user memory load”
